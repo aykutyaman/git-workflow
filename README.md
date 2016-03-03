@@ -15,6 +15,7 @@ This document describes the git workflow.
   $ git checkout -b feature/awesome develop
   # Adding an empty commit (with a meaningful name) to make the pull-request possible
   $ git commit --allow-empty -m "Feature awesome: Basic teaser component"
+  $ git push origin feature/awesome
 ```
 
  The point of this commit is to initialize the branch and the feature so that a pull-request can be created on GitHub.
