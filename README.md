@@ -65,8 +65,8 @@ Once all checkboxes from the description have been checked, the name of the pull
 
 - then merge master back into develop so that develop has the version commit:
 ```
-  $ git checkout master
-  $ git merge develop
+  $ git checkout develop
+  $ git merge master
 ```
 
 
