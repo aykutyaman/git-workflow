@@ -14,7 +14,7 @@ This document describes the git workflow.
 ``` bash
   $ git checkout -b feature/awesome develop
   # Adding an empty commit (with a meaningful name) to make the pull-request possible
-  $ git commit --allow-empty -m "Feature awesome: Basic teaser component"
+  $ git commit --allow-empty -m "Feature awesome: Fixes #1444"
   $ git push origin feature/awesome
 ```
 
