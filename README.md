@@ -37,11 +37,19 @@ In the description of the story, create a list of tasks where a task is a checkb
 Once all checkboxes from the description have been checked, the name of the pull-request can be updated to [RFR] for Ready For Review.
 
 ``` bash
+  $ git checkout feature/awesome
   # .... do some work ...
+  $ git add -A
+  $ git commit -am 'commit message'
   # incorporate all of the new commits in develop with rebase
   $ git rebase develop
   # ..CONFLICT.. after fixing...
   $ git rebase --continue
+  $ git push origin feature/awesome
+  # if you have rejected with: ! [rejected]        feature/react -> feature/react (non-fast-forward)
+  # for reference: http://stackoverflow.com/questions/8939977/git-push-rejected-after-feature-branch-rebase
+  # you can do this:
+  $ git push --force origin feature/awesome
 ```
 - someone should review our changes first, discuss, and collaborate
   on individual features, embed photos, comment directly on lines of code, use
